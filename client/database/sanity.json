@@ -12,7 +12,12 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "content-calendar",
+    "@sanity/code-input",
+    "color-list",
+    "icon-picker",
+    "autocomplete-tags"
   ],
   "env": {
     "development": {

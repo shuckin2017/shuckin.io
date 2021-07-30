@@ -30,6 +30,11 @@ export default createSchema({
           type: "string",
         },
         {
+            title: "Icon",
+            name: "icon",
+            type: "iconPicker"
+        },
+        {
           title: 'Ссылка',
           name: 'slug',
           type: 'slug',
@@ -47,7 +52,11 @@ export default createSchema({
           name: "email",
           type: "email",
         },
-
+        {
+          name: 'tags',
+          title: 'Tags',
+          type: 'tags',
+        },
         {
           name: 'address',
           title: 'Адрес',
@@ -71,6 +80,14 @@ export default createSchema({
             }
           ]
         },
+        {
+          name: 'exampleUsage',
+          title: 'Example usage',
+          type: 'code',
+          options: {
+            language: 'js'
+          }
+        }
       ]
     },
     {
@@ -86,37 +103,26 @@ export default createSchema({
       
       // Now we proceed to list the fields of our document
       fields: [
-        // This document has only one field
         {
-          // The display name for this field
           title: "Название проекта",
-
-          // The identifier for this field used in the api's
           name: "name",
-
-          // The type of this field
           type: "string",
         },
         {
-          // The display name for this field
           title: "Заказчик",
-
-          // The identifier for this field used in the api's
           name: "clients",
-
-          // The type of this field
           type: "string",
         },
         {
-          // The display name for this field
           title: "Используемые технологии",
-
-          // The identifier for this field used in the api's
           name: "stack",
-
-          // The type of this field
           type: "string",
-        }
+        },
+        {
+          title: "Ссылка на репозиторий",
+          name: "urlgithub",
+          type: "url",
+        },
       ]
     }
   ])
