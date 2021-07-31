@@ -1,0 +1,41 @@
+$header-height: 80px;
+
+/*========== Colors ==========*/
+/* Change favorite color */
+$first-color: #0E2431;
+$primary-color: #1968FE;
+$second-color: #6FCF97;
+$white-color: #fff;
+$container-color: #fff;
+
+$first-color-lighter: lighten($first-color, 10%);
+$primary-color-darken-1: darken($primary-color, 10%);
+$primary-color-darken-2: darken($primary-color, 20%);
+
+
+/*========== Font and typography ==========*/
+$body-font: 'Rubik', sans-serif;
+
+/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+$big-font-size: 2rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+
+/*========== Font weight ==========*/
+$font-normal: 400;
+$font-regular: 500;
+$font-medium: 600;
+$font-semi-bold: 700;
+
+
+// /*========== z index ==========*/
+// $z-tooltip:;
+$z-fixed: 100;
+// $z-modal:;
+
+// /*========== transition ==========*/
+$transition-all: all .15s ease-in-out;

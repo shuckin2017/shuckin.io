@@ -1,0 +1,27 @@
+.social-icon {
+  &__list {
+    color: $primary-color;
+  }
+  &__item {
+    & svg {
+    width: 30px;
+    height: 30px;
+    transition: $transition-all;
+      &:hover {
+        color: $primary-color-darken-1;
+      }
+      &:active {
+        color: $primary-color-darken-2;
+      }
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+@include tablet {
+  .social-icon__list {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+.btn-default {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .563rem 1.188rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 8px;
+  transition: $transition-all;
+  &:hover {
+    color: $white-color;
+    background-color: $primary-color-darken-1;
+    border-color: $primary-color-darken-1;
+  }
+
+  &:active {
+    color: $white-color;
+    background-color: $primary-color-darken-2;
+    border-color: $primary-color-darken-2;
+  }
+}
+
+.btn-header {
+  margin-left: 70px;
+  text-transform: uppercase;
+  border-radius: 50px !important;
+  font-weight: $font-regular;
+}
+
+.btn-primary {
+  color: $primary-color;
+  border-color: $primary-color;
+  box-shadow: none;
+}

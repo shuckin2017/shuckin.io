@@ -2,23 +2,25 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Project from './components/Project';
-import Contact from './components/Contact';
+import Header from './pages/Header/Header';
+import Home from './pages/Home';
+import About from './pages/About';
+import Project from './pages/Project';
+import Contact from './pages/Contact';
 
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <div className="App wrapper h-screen">
-          <Header/>
-          <Route components={Home} path="/" exact/>
-          <Route components={About} path="/about" />
-          <Route components={Project} path="/project" />
-          <Route components={Contact} path="/contact" />
+        <div className="App">
+          <Header />
+          <div className="wrapper h-screen">
+            <Route component={Home} path="/" exact />
+            <Route component={About} path="/about" />
+            <Route component={Project} path="/project" />
+            <Route component={Contact} path="/contact" />
+          </div>
         </div>
       </Switch>
     </BrowserRouter>

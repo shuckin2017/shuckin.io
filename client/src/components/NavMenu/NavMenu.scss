@@ -1,0 +1,22 @@
+.nav-menu-list {
+  @include flex-j-center;
+  flex: 1;
+  color: $first-color;
+}
+
+.nav-menu-item {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: $transition-all;
+  &:hover {
+    color: $primary-color;
+  }
+  &:active {
+    color: $primary-color-darken-2;
+  }
+}
+
+.nav-menu-item:not(:last-child) {
+  margin-right: 15px;
+}

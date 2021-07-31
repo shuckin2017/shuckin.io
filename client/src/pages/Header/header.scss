@@ -1,0 +1,66 @@
+.header {
+  height: $header-height;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $container-color;
+  &_wrapper{
+    @include flex-all-sb;
+    padding: 10px 0;
+  }
+  &_logo{
+    color: $first-color;
+    @include flex-a-start;
+    align-items: center;
+    &-avatar{
+      
+      @include flex-a-center;
+      margin-right: 1rem;
+      height: 50px;
+      width: 50px;
+    }
+    &-title{
+      @include flex-a-start;
+      @include flex-column;
+    }
+  }
+  &_title {
+    font-size: 1rem;
+    font-weight: $font-medium;
+    line-height: 27px;
+    &-name {
+      margin-top: -12px;
+    }
+  }
+  &_subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: -5px;
+  }
+}
+
+
+@include mobile {
+  .header {
+    position: absolute;
+    padding: 10px 0;
+  }
+  .nav {
+    display: none;
+  }
+  .btn-header {
+    display: none;
+  }
+}
+
+@include tablet{
+  .header {
+    position: absolute;
+  }
+
+  .btn-header {
+    display: none;
+  }
+}
