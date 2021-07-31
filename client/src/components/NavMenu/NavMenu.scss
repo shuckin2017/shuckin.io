@@ -1,5 +1,5 @@
 .nav-menu-list {
-  @include flex-j-center;
+  @include flex-e-center;
   flex: 1;
   color: $first-color;
 }
@@ -7,7 +7,6 @@
 .nav-menu-item {
   font-size: 1rem;
   font-weight: 400;
-  text-transform: uppercase;
   transition: $transition-all;
   &:hover {
     color: $primary-color;

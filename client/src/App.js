@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
-import Header from './pages/Header/Header';
-import Home from './pages/Home';
-import About from './pages/About';
-import Project from './pages/Project';
-import Contact from './pages/Contact';
+import Header from './components/HeaderL/HeaderL';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Work from './pages/Work/Work';
+import Contact from './pages/Contact/Contact';
 
 
 function App() {
@@ -15,12 +15,10 @@ function App() {
       <Switch>
         <div className="App">
           <Header />
-          <div className="wrapper h-screen">
-            <Route component={Home} path="/" exact />
-            <Route component={About} path="/about" />
-            <Route component={Project} path="/project" />
-            <Route component={Contact} path="/contact" />
-          </div>
+          <Route component={Home} path="/" exact />
+          <Route component={About} path="/about" />
+          <Route component={Work} path="/work" />
+          <Route component={Contact} path="/contact" />
         </div>
       </Switch>
     </BrowserRouter>

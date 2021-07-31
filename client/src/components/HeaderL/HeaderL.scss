@@ -1,0 +1,64 @@
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $container-color;
+}
+
+.nav {
+  max-width: 968px;
+  height: $header-height;
+  @include flex-all-sb;
+  &__logo{
+    @include flex-a-start;
+    @include flex-column;
+    color: $first-color;
+    font-size: 1rem;
+    transition: $transition-all;
+    &-title {
+      font-weight: $font-medium;
+    }
+    &:hover {
+      color: $primary-color-darken-1;
+    }
+    &:active {
+      color: $primary-color-darken-2;
+    }
+  }
+  &__toggle {
+    font-size: 1.1rem;
+    color: $first-color;
+    cursor: pointer;
+    transition: $transition-all;
+    &:hover {
+      color: $primary-color-darken-1;
+    }
+    &:active {
+      color: $primary-color-darken-2;
+    }
+  }
+  &__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  &__link {
+    @include flex-a-start;
+    @include flex-column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: $container-color;
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0px -1px 4px rgba(0, 0, 0, .15);
+      border-radius: 1.5rem 0 1.5rem 0;
+      transition: .3s;
+  }
+}

@@ -1,9 +1,8 @@
 import React from 'react';
 
 import avatar from '../../assets/img/avatar.png';
-import NavMenu from '../../components/NavMenu/NavMenu'
-import SociaIcons from '../../components/SociaIcons/SociaIcons';
-import Button from '../../components/Button/Button'
+import NavMenu from '../NavMenu/NavMenu'
+import Button from '../Button/Button'
 
 export default function Header() {
   return (
@@ -12,13 +11,12 @@ export default function Header() {
         <div className="header_logo">
           <img className="header_logo-avatar" src={avatar} alt="" />
           <div className="header_logo-title">
-            <span className="header_title">Maxim</span>
-            <span className="header_title header_title-name">Shuchukin</span>
+            <span className="header_title">Максим</span>
+            <span className="header_title header_title-name">Щукин</span>
             <span className="header_subtitle">Software Developer</span>
           </div>
         </div>
         <NavMenu/>
-        <SociaIcons />
         <Button title="here me"/>
       </div>
     </header>

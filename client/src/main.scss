@@ -15,10 +15,12 @@
 
 
 /*===== STYLE PAGES =====*/
-@import './pages/Header/header';
+@import './pages/Home/Home';
+@import './pages/About/About';
 
 
 /*===== STYLE COMPONENTS =====*/
+@import './components/HeaderL/headerL';
 @import './components/NavMenu/NavMenu';
 @import './components/SociaIcons/SociaIcons';
 @import './components/Button/Button';

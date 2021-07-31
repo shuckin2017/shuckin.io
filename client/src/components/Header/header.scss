@@ -42,25 +42,4 @@
 }
 
 
-@include mobile {
-  .header {
-    position: absolute;
-    padding: 10px 0;
-  }
-  .nav {
-    display: none;
-  }
-  .btn-header {
-    display: none;
-  }
-}
 
-@include tablet{
-  .header {
-    position: absolute;
-  }
-
-  .btn-header {
-    display: none;
-  }
-}

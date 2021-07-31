@@ -1,5 +1,7 @@
 .social-icon {
   &__list {
+    display: flex;
+    flex-direction: column;
     color: $primary-color;
   }
   &__item {

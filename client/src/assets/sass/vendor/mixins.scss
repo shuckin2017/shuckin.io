@@ -33,6 +33,11 @@
   justify-content: center;
 }
 
+@mixin flex-e-center {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @mixin flex-all-center {
   display: flex;
   align-items: center;

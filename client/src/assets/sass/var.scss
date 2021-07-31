@@ -1,4 +1,4 @@
-$header-height: 80px;
+$header-height: 3rem;
 
 /*========== Colors ==========*/
 /* Change favorite color */
@@ -25,7 +25,18 @@ $normal-font-size: .938rem;
 $small-font-size: .813rem;
 $smaller-font-size: .75rem;
 
+@media screen and (max-width: 968px) {
+  $big-font-size: 3rem;
+  $h1-font-size: 2.25rem;
+  $h2-font-size: 1.5rem;
+  $h3-font-size: 1.25rem;
+  $normal-font-size: 1rem;
+  $small-font-size: .875rem;
+  $smaller-font-size: .813rem;
+}
+
 /*========== Font weight ==========*/
+$font-light: 300;
 $font-normal: 400;
 $font-regular: 500;
 $font-medium: 600;
