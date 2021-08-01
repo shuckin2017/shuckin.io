@@ -6,6 +6,10 @@
    flex-direction: column;
 }
 
+@mixin flex-row {
+  flex-direction: row;
+}
+
 @mixin bg-cover {
   background-position: center;
   background-size: cover;
@@ -26,6 +30,12 @@
 @mixin flex-a-start {
   display: flex;
   align-items: start;
+  justify-content: flex-start;
+}
+@mixin flex-c-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 @mixin flex-j-center {

@@ -37,3 +37,62 @@
   border-color: $primary-color;
   box-shadow: none;
 }
+
+.button-o {
+  display: inline-block;
+  font-size: $h3-font-size;
+  color: $primary-color;
+  padding: 1rem 2rem;
+  border: 2px solid $primary-color;
+  border-radius: .5rem;
+  font-weight: $font-regular;
+  transition: $transition-all;
+  &:hover {
+    color: $white-color;
+    border: 2px solid $primary-color;
+    background-color: $primary-color;
+  }
+  &:active {
+    border: 2px solid $primary-color-darken-2;
+    background-color: $primary-color-darken-2;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin-left: $mb-1;
+  }
+  &-flex {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.button-b {
+  display: inline-block;
+  font-size: $h3-font-size;
+  background-color: $primary-color;
+  color: $white-color;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  font-weight: $font-regular;
+  transition: $transition-all;
+  &:hover {
+    color: $white-color;
+    background-color: $primary-color;
+  }
+
+  &:active {
+    background-color: $primary-color-darken-2;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-left: $mb-1;
+  }
+
+  &-flex {
+    display: inline-flex;
+    align-items: center;
+  }
+}

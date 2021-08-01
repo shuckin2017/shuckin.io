@@ -17,5 +17,7 @@
     "url": "https://github.com/shuckin2017/shuckin.io/issues"
   },
   "homepage": "https://github.com/shuckin2017/shuckin.io#readme",
-  "dependencies": {}
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }

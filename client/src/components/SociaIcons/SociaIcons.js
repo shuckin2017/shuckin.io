@@ -1,27 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { UilInstagram, UilGithub, UilVk} from '@iconscout/react-unicons'
+import {
+  UilInstagramAlt,
+  UilGithub,
+  UilVk,
+  UilTelegram,
+  UilWhatsappAlt
+} from '@iconscout/react-unicons'
 
-export default function SociaIcons() {
+export default function SociaIcons(props) {
   return (
     <div className="social-icon__list">
       <Link
         to="/"
-        className="social-icon__item"
+        className={props.class}
         target="_blank">
         <UilGithub />
       </Link>
       <Link
         to="/"
-        className="social-icon__item"
+        className={props.class}
         target="_blank">
-        <UilInstagram />
+        <UilInstagramAlt />
       </Link>
       <Link
         to="/"
-        className="social-icon__item"
+        className={props.class}
         target="_blank">
-        <UilVk/>
+        <UilVk />
+      </Link>
+      <Link
+        to="/"
+        className={props.class}
+        target="_blank">
+        <UilTelegram />
+      </Link>
+      <Link
+        to="/"
+        className={props.class}
+        target="_blank">
+        <UilWhatsappAlt />
       </Link>
     </div>
   )

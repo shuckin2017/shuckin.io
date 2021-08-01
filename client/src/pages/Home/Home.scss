@@ -1,0 +1,60 @@
+/*===== HOME PAGE =====*/
+.home {
+  &__container {
+    gap: 1rem;
+  }
+  &__inner{
+    grid-template-columns: .5fr .3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+  }
+  &__img-blob{
+    width: 190px;
+    height: 190px;
+  }
+  &__data {
+    grid-column: 1/3;
+  }
+  &__title {
+    color: $primary-color;
+    font-size: $big-font-size;
+  }
+  &__subtitle {
+    font-size: $h3-font-size;
+    color: $first-color;
+    font-weight: $font-medium;
+    margin-bottom: $mb-0-75;
+  }
+  &__description {
+    margin-bottom: $mb-2;
+  }
+  &__button {
+    margin-bottom: $mb-2;
+  }
+  &__scroll {
+    transition: $transition-all;
+    display: none;
+    &-button {
+      @include flex-c-start;
+      color: $first-color;
+      transition: .3s;
+    }
+    &:hover {
+      transform: translateY(.25rem);
+    }
+    &-mouse {
+      width: 25px;
+      height: 25px;
+    }
+    &-name{
+      font-size: $small-font-size;
+      color: $first-color;
+      font-weight: $font-regular;
+      margin-right: $mb-0-25;
+    }
+    &-arrow {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

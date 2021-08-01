@@ -1,13 +1,12 @@
 .social-icon {
   &__list {
-    display: flex;
-    flex-direction: column;
+    margin-top: $mb-3;
     color: $primary-color;
   }
   &__item {
     & svg {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     transition: $transition-all;
       &:hover {
         color: $primary-color-darken-1;
@@ -19,11 +18,5 @@
   }
   &__item:not(:last-child) {
     margin-right: 5px;
-  }
-}
-
-@include tablet {
-  .social-icon__list {
-    display: none;
   }
 }
