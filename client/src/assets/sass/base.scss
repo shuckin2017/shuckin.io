@@ -40,14 +40,19 @@ img {
 }
 
 .section {
-  padding: 4rem 0 4rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 .section__title {
   font-size: $h1-font-size;
+  text-align: center;
 }
 
 .section__subtitle {
+  display: block;
+  font-size: $small-font-size;
+  margin-bottom: $mb-3;
+  text-align: center;
 
 }
 

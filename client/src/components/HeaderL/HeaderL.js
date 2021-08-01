@@ -58,8 +58,8 @@ export default function HeaderL() {
         <div className="nav__logo">
           <img className="nav__logo-avatar" src={avatar} alt="" />
           <div className="nav__logo-inner">
-            <span className="nav__logo-title">Максим Щукин</span>
-            <span className="nav__logo-subtitle">Frontend Developer</span>
+            <div className="nav__logo-title">Максим Щукин</div>
+            <div className="nav__logo-subtitle">Frontend Developer</div>
           </div>
         </div>
         <div className={hidden ? "nav__menu show-menu" : "nav__menu"}>
