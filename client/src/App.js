@@ -3,10 +3,12 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import Header from './components/HeaderL/HeaderL';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Work from './pages/Work/Work';
-import Contact from './pages/Contact/Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Service from './pages/Service';
+import Skills from './pages/Skills';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -17,7 +19,9 @@ function App() {
           <Header />
           <Route component={Home} path="/" exact />
           <Route component={About} path="/about" />
-          <Route component={Work} path="/work" />
+          <Route component={Service} path="/service" />
+          <Route component={Skills} path="/skills" />
+          <Route component={Portfolio} path="/portfolio" />
           <Route component={Contact} path="/contact" />
         </div>
       </Switch>

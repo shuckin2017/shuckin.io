@@ -27,17 +27,17 @@ export default function HeaderL() {
     },
     {
       title: 'Skills',
-      link: '/',
+      link: '/skills',
       icon: <UilBriefcaseAlt />
     },
     {
       title: 'Service',
-      link: '/',
+      link: '/service',
       icon: <UilFileAlt />
     },
     {
       title: 'Portfolio',
-      link: '/work',
+      link: '/portfolio',
       icon: <UilScenery />
     },
     {
