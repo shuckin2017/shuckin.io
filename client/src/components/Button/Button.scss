@@ -69,7 +69,6 @@
 
 .button-b {
   display: inline-block;
-  font-size: $h3-font-size;
   background-color: $primary-color;
   color: $white-color;
   padding: 1rem 2rem;
@@ -94,5 +93,20 @@
   &-flex {
     display: inline-flex;
     align-items: center;
+  }
+}
+
+.button {
+  margin-bottom: $mb-1;
+
+  &-small {
+    font-size: $small-font-size;
+    padding: .75rem 1rem;
+  }
+
+  &-link {
+    padding: 0;
+    background-color: transparent;
+    color: $first-color;
   }
 }

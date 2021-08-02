@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Popup from 'reactjs-popup';
 import {
   UilBracketsCurly,
   UilAngleDown,
@@ -100,9 +101,8 @@ export default function Skills(props) {
     }
   ]
 
-  const [isHidden, setHidden] = useState(null);
-  const openTab = e => setHidden(+e.target.dataset.index);
-
+  const [isHidden, setHidden] = useState(false);
+  
   return (
     <section className="section skills" id="skills">
       <h2 className="section__title">Skills</h2>
@@ -123,7 +123,7 @@ export default function Skills(props) {
                   <UilAngleDown
                     className="skills__arrow"
                     data-index={i}
-                    onClick={openTab}/>
+                    onClick={() => setHidden(!isHidden)}/>
                 </div>
                 <div className="skills__list grid">
                   {
