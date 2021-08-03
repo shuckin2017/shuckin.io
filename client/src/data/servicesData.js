@@ -24,7 +24,27 @@ const servicesData = [
         name: 'Lorem ipsum dolor sit amet consectetur'
       }
     ]
-  }
+  },
+  {
+    titleFirst: 'Backend',
+    titleSecond: 'Developer',
+    icon: <UilServer className="services__icon" />,
+    elements: [
+      {
+        name: 'Lorem ipsum dolor sit amet consectetur'
+      },
+      {
+        name: 'Lorem ipsum dolor sit amet consectetur'
+      },
+      {
+        name: 'Lorem ipsum dolor sit amet consectetur'
+      },
+      {
+        name: 'Lorem ipsum dolor sit amet consectetur'
+      }
+    ]
+  },
+
 ];
 
 export default servicesData

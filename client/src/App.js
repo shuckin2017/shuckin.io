@@ -10,18 +10,25 @@ import Services from './pages/Services';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Qualification from './pages/Qualification';
+import Project from './pages/Project';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
         <div className="App">
+
           <Header />
-          <Home/>
-          <About/>
-          <Skills/>
-          <Qualification/>
-          <Services/>
+          <Home />
+          <About />
+          <Skills />
+          <Qualification />
+          <Services />
+          <Portfolio />
+          <Project/>
+          <Contact/>
+          <Footer/>
           <Route component={Home} path="/home" />
           <Route component={About} path="/about" />
           <Route component={Services} path="/services" />

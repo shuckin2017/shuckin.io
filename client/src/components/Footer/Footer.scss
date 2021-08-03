@@ -1,0 +1,42 @@
+.footer {
+  &__container {
+    row-gap: 3.5rem;
+  }
+  &__bg {
+    background-color: $primary-color;
+    padding: 2rem 0 3rem;
+  }
+  &__title {
+    color: $white-color;
+    font-size: $h1-font-size;
+    margin-bottom: $mb-0-25;
+  }
+  &__subtitle {
+    color: $white-color;
+    font-size: $small-font-size;
+  }
+  &__socials {
+    &-item {
+      color: $white-color;
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  &__link {
+    color: $white-color;
+    margin-bottom: $mb-2;
+    &:hover {
+      color: $white-color;
+    }
+  }
+  &__copy {
+    font-size: $small-font-size;
+    text-align: center;
+    color: $first-color-lighter-1;
+    margin-top: $mb-3;
+  }
+  
+}

@@ -1,6 +1,4 @@
 import React from 'react';
-import SociaIcons from '../../components/SociaIcons/SociaIcons'
-import Photo from '../../assets/img/item-1.png';
 import {
     UilGithubAlt,
     UilInstagram,

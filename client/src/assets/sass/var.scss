@@ -7,7 +7,9 @@ $primary-color: #1968FE;
 $second-color: #6FCF97;
 $white-color: #fff;
 $container-color: #fff;
+$input-color: #6FCF97;
 
+$first-color-lighter-1: lighten($first-color, 10%);
 $first-color-lighter: lighten($first-color, 20%);
 $primary-color-lighten-1: lighten($primary-color, 10%);
 $primary-color-lighten-2: lighten($primary-color, 30%);
