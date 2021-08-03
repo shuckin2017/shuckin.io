@@ -11,8 +11,8 @@ import {
 export default function Home() {
     return (
         <section className='home section' id="home">
-            <div className="home__content container">
-                <div className="home__head">
+            <div className="home__container container grid">
+                <div className="home__content grid">
                     <div className="home__social">
                         <UilTelegramAlt className="home__social-icon" />
                         <UilGithubAlt className="home__social-icon" />

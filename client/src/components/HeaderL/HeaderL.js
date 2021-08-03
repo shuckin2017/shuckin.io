@@ -12,7 +12,8 @@ import {
   UilMessage,
   UilTimes,
   UilBars,
-  UilDownloadAlt
+  UilDownloadAlt,
+  UilMoon
 } from '@iconscout/react-unicons'
 
 
@@ -89,7 +90,7 @@ export default function HeaderL() {
           <a href="/" className="button-o button-flex nav__menu-button">
             Resume <UilDownloadAlt className="button__icon" />
           </a>
-          <SociaIcons class="social-icon__item"/>
+          <SociaIcons mainStyle="social-icon__list" class="social-icon__item"/>
           <UilTimes
             className="nav__close"
             id="nav__close"
@@ -99,12 +100,14 @@ export default function HeaderL() {
 
         </div>
         <div className="nav__btn">
+          <UilMoon 
+            className="nav__mode"/>
           <UilBars
             className="nav__toggle"
-            id="nav"
             onClick={() => {
               setHidden(!hidden);
             }} />
+         
         </div>
       </nav>
     </header>

@@ -10,7 +10,7 @@ import {
 
 export default function SociaIcons(props) {
   return (
-    <div className="social-icon__list">
+    <div className={props.mainStyle}>
       <Link
         to="/"
         className={props.class}

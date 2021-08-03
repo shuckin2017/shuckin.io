@@ -16,7 +16,7 @@ SwiperCore.use([Navigation]);
 
 export default function Portfolio() {
   return (
-    <section className="section portfolio">
+    <section className="section portfolio" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Most resent work</span>
       <div className="container portfolio__container">

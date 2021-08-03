@@ -16,8 +16,17 @@
     font-size: $small-font-size;
   }
   &__socials {
-    &-item {
+    &-item svg {
+      width: 40px;
+      height: 40px;
       color: $white-color;
+      margin-right: $mb-0-75;
+      &:hover {
+        color: darken($white-color, 10%);
+      }
+      &:active {
+        color: darken($white-color, 30%);
+      }
     }
   }
   &__links {
@@ -26,16 +35,21 @@
     row-gap: 1.5rem;
   }
   &__link {
+    display: block;
+    font-size: $h2-font-size;
     color: $white-color;
     margin-bottom: $mb-2;
     &:hover {
-      color: $white-color;
+      color: $primary-color-lighten-1;
+    }
+    &:active {
+      color: $primary-color-darken-1;
     }
   }
   &__copy {
     font-size: $small-font-size;
     text-align: center;
-    color: $first-color-lighter-1;
+    color: $white-color;
     margin-top: $mb-3;
   }
   

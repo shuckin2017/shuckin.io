@@ -6,7 +6,7 @@ import ProjectImg from '../../assets/img/project.png'
 
 export default function Project() {
   return (
-    <section className="section project">
+    <section className="section project" id="project">
       <div className="project__bg">
         <div className="project__container container grid">
           <div className="project__data">

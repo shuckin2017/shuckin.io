@@ -5,7 +5,6 @@
 /*===== STYLE VENDOR =====*/
 @import './assets/sass/vendor/source';
 @import './assets/sass/vendor/mixins';
-@import './assets/sass/vendor/breakpoint';
 @import './assets/sass/vendor/helpers';
 
 /*===== BASE STYLE =====*/
@@ -13,7 +12,6 @@
 @import './assets/sass/grid';
 @import './assets/sass/base';
 @import './assets/sass/reset';
-
 
 /*===== STYLE PAGES =====*/
 @import './pages/Home/Home';
@@ -33,3 +31,8 @@
 @import './components/SociaIcons/SociaIcons';
 @import './components/Button/Button';
 @import './components/Footer/Footer';
+
+
+/*===== MEDIA QUERIES =====*/
+@import './assets/sass/vendor/breakpoint';
+@import './assets/sass/media-queries';

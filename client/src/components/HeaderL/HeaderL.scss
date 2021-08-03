@@ -27,8 +27,8 @@
       color: $primary-color-darken-2;
     }
   }
-  &__toggle {
-    font-size: 1.1rem;
+  &__toggle svg {
+    
     color: $first-color;
     cursor: pointer;
     transition: $transition-all;
@@ -37,6 +37,9 @@
     }
     &:active {
       color: $primary-color-darken-2;
+    }
+    &:last-child {
+      margin-left: $mb-0-75;
     }
   }
   &__list {

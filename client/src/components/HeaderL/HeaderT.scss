@@ -10,7 +10,7 @@
 }
 
 .nav {
-  max-width: 968px;
+   
   height: $header-height;
   @include flex-all-sb;
 
@@ -43,7 +43,8 @@
   }
 
   &__toggle {
-    font-size: 1.1rem;
+    width: 25px;
+    height: 25px;
     color: $first-color;
     cursor: pointer;
     transition: $transition-all;
@@ -55,6 +56,23 @@
     &:active {
       color: $primary-color-darken-2;
     }
+
+  }
+  &__mode {
+    width: 25px;
+    height: 25px;
+    color: $first-color;
+    cursor: pointer;
+    transition: $transition-all;
+    margin-right: $mb-0-75;
+    &:hover {
+      color: $primary-color-darken-1;
+    }
+
+    &:active {
+      color: $primary-color-darken-2;
+    }
+
   }
 
   &__list {
