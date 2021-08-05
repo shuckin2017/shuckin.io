@@ -26,8 +26,8 @@ const servicesData = [
     ]
   },
   {
-    titleFirst: 'Frontend',
-    titleSecond: 'Developer',
+    titleFirst: 'Ui/ Ui',
+    titleSecond: 'Designer',
     icon: <UilArrow className="services__icon" />,
     elements: [
       {
