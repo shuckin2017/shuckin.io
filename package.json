@@ -1,10 +1,14 @@
 {
   "name": "shuckin.io",
   "version": "1.0.0",
+  "homepage": "https://github.com/shuckin2017/shuckin.io#readme",
   "description": "Site Portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run eject --prefix client",
+    "predeploy": "npm run build --prefix client",
+    "deploy": "gh-pages -d --prefix client/build"
   },
   "repository": {
     "type": "git",
@@ -16,8 +20,9 @@
   "bugs": {
     "url": "https://github.com/shuckin2017/shuckin.io/issues"
   },
-  "homepage": "https://github.com/shuckin2017/shuckin.io#readme",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "gh-pages": "^3.2.3",
+    "normalize.css": "^8.0.1",
+    "swiper": "^6.8.0"
   }
 }
