@@ -1,152 +1,55 @@
-import React, { useState } from 'react';
-import Popup from 'reactjs-popup';
-import {
-  UilBracketsCurly,
-  UilAngleDown,
-  UilServerNetwork
-} from '@iconscout/react-unicons';
+import React, { useState } from "react";
+import SkilsItem from "../../components/SkillsItem/SkilsItem";
+import { UilAngleDown } from "@iconscout/react-unicons";
+import skillsData from "../../data/skillsData";
 
+export default function Skills() {
+    const [isHidden, setHidden] = useState(false);
 
-export default function Skills(props) {
-  const skillsDats = [
-    {
-      title: 'Frontend developer',
-      subtitle: 'More than 4 years',
-      icon: <UilBracketsCurly />,
-      elements: [
-        {
-          name: 'HTML',
-          pensent: '90%'
-        },
-        {
-          name: 'CSS',
-          pensent: '90%'
-        },
-        {
-          name: 'JavaScript',
-          pensent: '90%'
-        },
-        {
-          name: 'ReactJs',
-          pensent: '90%'
-        }
-      ]
-    },
-    {
-      title: 'Backend developer',
-      subtitle: 'More than 1 years',
-      icon: <UilServerNetwork />,
-      elements: [
-        {
-          name: 'Node.js',
-          pensent: '90%'
-        },
-        {
-          name: 'PHP',
-          pensent: '90%'
-        },
-        {
-          name: 'Python',
-          pensent: '90%'
-        },
-        {
-          name: 'npm',
-          pensent: '90%'
-        }
-      ]
-    }, {
-      title: 'Backend developer',
-      subtitle: 'More than 1 years',
-      icon: <UilServerNetwork />,
-      elements: [
-        {
-          name: 'Node.js',
-          pensent: '90%'
-        },
-        {
-          name: 'PHP',
-          pensent: '90%'
-        },
-        {
-          name: 'Python',
-          pensent: '90%'
-        },
-        {
-          name: 'npm',
-          pensent: '90%'
-        }
-      ]
-    }, {
-      title: 'Backend developer',
-      subtitle: 'More than 1 years',
-      icon: <UilServerNetwork />,
-      elements: [
-        {
-          name: 'Node.js',
-          pensent: '90%'
-        },
-        {
-          name: 'PHP',
-          pensent: '90%'
-        },
-        {
-          name: 'Python',
-          pensent: '90%'
-        },
-        {
-          name: 'npm',
-          pensent: '90%'
-        }
-      ]
-    }
-  ]
-
-  const [isHidden, setHidden] = useState(false);
-  
-  return (
-    <section className="section skills" id="skills">
-      <h2 className="section__title">Skills</h2>
-      <span className="section__subtitle">My technical level</span>
-      <div className="container skills__container grid">
-        {
-          skillsDats.map((item, i) => {
-            return (
-              <div className={isHidden ? "skills__content skills__open" : "skills__content skills__close"} key={i} >
-                <div className="skills__header">
-                  <div className="skills__icon">
-                    {item.icon}
-                  </div>
-                  <div className="skills__head">
-                    <h1 className="skills__title">{item.title}</h1>
-                    <span className="skills__subtitle">{item.subtitle}</span>
-                  </div>
-                  <UilAngleDown
-                    className="skills__arrow"
-                    data-index={i}
-                    onClick={() => setHidden(!isHidden)}/>
-                </div>
-                <div className="skills__list grid">
-                  {
-                    item.elements.map((elem, i) => {
-                      return (
-                        <div className="skills__data" key={i}>
-                          <div className="skills__titles">
-                            <h3 className="skills__name">{elem.name}</h3>
-                            <span className="skills__nubmer">{elem.pensent}</span>
-                          </div>
-                          <div className="skills__bar">
-                            <span className="skills__percentage skills__html"></span>
-                          </div>
+    return (
+        <section className="section skills" id="skills">
+            <h2 className="section__title">Skills</h2>
+            <span className="section__subtitle">My technical level</span>
+            <div className="container skills__container grid">
+                {skillsData.map(({ icon, title, subtitle, elements }, i) => {
+                    return (
+                        <div
+                            className={
+                                isHidden
+                                    ? "skills__content skills__open"
+                                    : "skills__content skills__close"
+                            }
+                            key={i}
+                        >
+                            <div className="skills__header">
+                                <div className="skills__icon">{icon}</div>
+                                <div className="skills__head">
+                                    <h1 className="skills__title">{title}</h1>
+                                    <span className="skills__subtitle">
+                                        {subtitle}
+                                    </span>
+                                </div>
+                                <UilAngleDown
+                                    className="skills__arrow"
+                                    data-index={i}
+                                    onClick={() => setHidden(!isHidden)}
+                                />
+                            </div>
+                            <div className="skills__list grid">
+                                {elements.map(({ name, pensent }, i) => {
+                                    return (
+                                        <SkilsItem
+                                            i={i}
+                                            name={name}
+                                            pensent={pensent}
+                                        />
+                                    );
+                                })}
+                            </div>
                         </div>
-                      );
-                    })
-                  }
-                </div>
-              </div>
-            )
-          })
-        }
-      </div>
-    </section >
-  )
+                    );
+                })}
+            </div>
+        </section>
+    );
 }

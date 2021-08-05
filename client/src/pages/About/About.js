@@ -1,9 +1,7 @@
-import React from 'react';
-import Photo from '../../assets/img/item-1.png'
+import React from "react";
+import Photo from "../../assets/img/item-1.png";
 
-import {
-    UilDownloadAlt
-} from '@iconscout/react-unicons'
+import { UilDownloadAlt } from "@iconscout/react-unicons";
 
 export default function About() {
     return (
@@ -13,31 +11,46 @@ export default function About() {
             <div className="container about__container grid">
                 <img src={Photo} alt="" className="about__img" />
                 <div className="about__data">
-                    <p className="about__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam odio eos accusantium dolore rem in nihil a dicta enim est.</p>
+                    <p className="about__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Numquam odio eos accusantium dolore rem in nihil a
+                        dicta enim est.
+                    </p>
 
                     <div className="about__info">
                         <div>
                             <span className="about__info-title">08+</span>
-                            <span className="about__info-name">Years<br /> experince</span>
+                            <span className="about__info-name">
+                                Years
+                                <br /> experince
+                            </span>
                         </div>
                         <div>
                             <span className="about__info-title">20+</span>
-                            <span className="about__info-name">Completed<br /> project</span>
+                            <span className="about__info-name">
+                                Completed
+                                <br /> project
+                            </span>
                         </div>
                         <div>
                             <span className="about__info-title">05+</span>
-                            <span className="about__info-name">Companies<br /> worked</span>
+                            <span className="about__info-name">
+                                Companies
+                                <br /> worked
+                            </span>
                         </div>
                     </div>
                     <div className="about__buttons">
-                        <a href="/" className="button-b button-b-flex about__button">
-                            Download CV<UilDownloadAlt className="button__icon" />
+                        <a
+                            href="/"
+                            className="button-b button-b-flex about__button"
+                        >
+                            Download CV
+                            <UilDownloadAlt className="button__icon" />
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </section>
-    )
+    );
 }
